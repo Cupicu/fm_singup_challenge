@@ -1,0 +1,174 @@
+/*# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Red: hsl(0, 100%, 74%) 
+- Green: hsl(154, 59%, 51%)
+
+### Accent
+
+- Blue: hsl(248, 32%, 49%)
+
+### Neutral
+
+- Dark Blue: hsl(249, 10%, 26%) 
+- Grayish Blue: hsl(246, 25%, 77%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 500, 600, 700
+
+*/
+
+@import url(resets.css);
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+:root{
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+}
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: var(--red);
+    background-image: url(images/bg-intro-mobile.png);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main{
+    width: 375px;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    color: white;
+}
+
+button{
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 100%;
+}
+
+main button {
+    background-color: var(--blue);
+    border-radius: 0.5rem;
+    padding: 0px 80px;
+    height: 5rem;
+    margin-top: 2.1rem;
+    box-shadow: 0rem 0.4rem 0rem 0rem rgba(0,0,0,0.13);
+}
+main p{
+    color: white;
+    margin-bottom: 1rem ;
+}
+form {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 1rem 0rem;
+    box-shadow: 0rem 0.4rem 0rem 0rem rgba(0,0,0,0.13);
+}
+
+form input{
+    border: 1px solid rgba(197, 197, 197, 0.5);
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    width: 100%;
+    height: 3rem;
+}
+
+form button{
+    background-color: var(--green);
+    text-transform: uppercase;
+    padding: 0 1rem;
+    font-weight: bold;
+    height: 3rem;
+    box-shadow: 0rem -0.2rem 0rem 0rem rgba(0,0,0,0.13)inset;
+}
+
+form p {
+    color: var(--grayish-blue);
+    font-size: 0.7rem;
+    padding: 1rem 2rem;
+}
+
+form b {
+    color: var(--red);
+}
+
+.error-field{
+    border-color:var(--red);
+    background: url(images/icon-error.svg) no-repeat;
+    background-position: 95% center;
+    padding-right: 10px;
+}
+
+span{
+    font-size: 10px;
+    color: var(--red);
+    font-weight: bold;
+    font-style: italic;
+    text-align: right;
+    display: block;
+    margin: 0px 0px;
+}
+
+
+@media (min-width: 376px) {
+    body{
+        background-image: url(images/bg-intro-mobile.png);
+    }
+
+    main{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    section{
+        width: 30%;
+    }
+
+    .main__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: initial;
+    }
+
+    h1{
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 25px;
+    }
+}
