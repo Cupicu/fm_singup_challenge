@@ -9,7 +9,7 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with
+  - [Built with](#built-with)
 - [Author](#author)
 
 
@@ -25,7 +25,7 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Receive an error message when the `form` is submitted if:
   - Any `input` field is empty. The message for this error should say *"[Field Name] cannot be empty"*
-  - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Looks like this is not an email"*
+  - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for sthis error should say *"Looks like this is not an email"*
 
 ### Screenshot
 
